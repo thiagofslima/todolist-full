@@ -64,7 +64,6 @@ public class TodoItemController : ControllerBase
         {
             return StatusCode(500, "Erro ao salvar mudanças no banco.");
         }
-        await _context.SaveChangesAsync();
 
         return NoContent();
     }
